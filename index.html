@@ -6,10 +6,20 @@
   <title>AISB2026</title>
   <style>
     body { margin: 0; background: #111; display: grid; place-items: center; min-height: 100vh; }
-    img { max-width: 100%; height: auto; }
+    .wrap { position: relative; display: inline-block; max-width: 100%; }
+    .wrap img { display: block; max-width: 100%; height: auto; }
+    .hotspot {
+      position: absolute;
+      left: 20%; top: 80%;      /* top-left corner of the hotspot */
+      width: 60%; height: 18%;  /* size of the hotspot */
+      /* outline: 2px solid red;  <- remove the slashes to see the area while adjusting */
+    }
   </style>
 </head>
 <body>
-  <a href="afis-AISB-2026.jpg"><img src="afis-AISB-2026.jpg" alt="AISB2026"></a>
+  <div class="wrap">
+    <img src="afis-AISB-2026.jpg" alt="AISB-2026">
+    <a class="hotspot" href="mailto:adrian.vidrascu@gmail.com?subject=AISB-2026" aria-label="Send an email"></a>
+  </div>
 </body>
 </html>
